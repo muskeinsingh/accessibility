@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<style>
+    .div {
+      display: flex;
+      flex: 1;
+      height: 100%;
+      flex-direction: column;
+    }
+    .outerDiv {
+         flex: 1; display: flex; align-items: center; justify-content: center;
+         font-size: 28px;
+    }
+    .red {
+        background-color: red;
+    }
+    .lightgreen {
+        background-color: lightgreen;
+    }
+    .darkblue {
+        background-color: darkblue;
+    }
+    .violet {
+        background-color: violet;
+    }
+   
+    </style>
+<body>  
+  <div class="div">
+      <div class="outerDiv red">
+        <marquee style="color: pink; text-align: center;" scrollamount="10" direction = "up">This text will scroll from bottom to up</marquee>
+      </div>
+      <div class="outerDiv lightgreen">        
+          <marquee style="color: yellow;text-align: center;" scrollamount="10" direction = "down">This text will scroll from bottom to up</marquee>
+      </div>
+      <div class="outerDiv darkblue">        
+          <marquee style="color: red;text-align: center;" scrollamount="10" direction = "right">This text will scroll from bottom to up</marquee>
+      </div>
+      <div class="outerDiv violet">        
+          <marquee style="color: green;text-align: center;" scrollamount="10" direction = "left">This text will scroll from bottom to up</marquee>
+      </div>
+  </div>
+  
+</body>
+</html>
