@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+@font-face {
+   font-family: OpenDyslexicBold;
+   src: url(OpenDyslexic-Bold.otf);
+}
+@font-face {
+   font-family: OpenDyslexicRegular;
+   src: url(OpenDyslexic-Regular.otf);
+}
+@font-face {
+   font-family: OpenDyslexicItalic;
+   src: url(OpenDyslexic-Italic.otf);
+}
+.div {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+.logo-view {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+  flex: 1;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  font-family: Times;
+  padding: 0%;
+}
+
+</style>
+<body>  
+  <div class="div">
+    <label id="1">I'm label 1</label>
+    <label id="2">I'm label 2</label>
+    <button aria-labelledby="1 2" aria-label="I'm the first button" onClick="alert('I got clicked')" class="button">
+        People like me!  
+    </button>
+    <div class="div center">
+      <div onClick="alert('I got clicked')">
+        People don't like me so much!
+      </div>
+    </div>          
+  </div>
+  
+</body>
+</html>

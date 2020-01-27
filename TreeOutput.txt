@@ -1,0 +1,8 @@
+id="firstNameLabel" role="WebArea"
+    id="firstNameLabel" role="label"
+    id="firstName" role="textbox" name="firstName" labelledBy="label#firstNameLabel"
+    id="surNameLabel" role="label"
+    id="surname" role="textbox" name="surname" labelledBy="label#surNameLabel"
+    role="GenericContainer"
+        role="button" name="Add"
+        role="button" name="Delete"
