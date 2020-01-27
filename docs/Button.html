@@ -18,8 +18,8 @@
 }
 .div {
   display: flex;
-  /* flex: 1; */
-  /* height: 100%; */
+  flex: 1;
+  height: 100%;
   flex-direction: column;
   font-family: OpenDyslexicRegular;
 }
@@ -34,6 +34,7 @@
     flex-direction: column;
 }
 .button {
+    flex: 1;
   background-color: #dbdbdb;
   text-align: center;
   text-decoration: none;
@@ -46,15 +47,11 @@
 </style>
 <body>  
   <div class="div">
-    <label style="text-align: center;" id="1">I will contribute to the button's description</label>
-    <label style="text-align: center;" id="2">Me, too!</label>
-    <button aria-labelledby="1 2" aria-label="I'm the first button" onClick="alert('I love it when someone clicks me')" class="button">
+    <button onClick="alert('I love it when someone clicks me')" class="button">
         People like me!  
     </button>
-    <div class="div center">
-      <div onClick="alert('I do not like it when someone clicks me')">
-        People don't like me so much!
-      </div>
+    <div onClick="alert('I do not like it when someone clicks me')" class="div center">
+      <span >People don't like me so much!</span>        
     </div>          
   </div>
   
