@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+@font-face {
+   font-family: OpenDyslexicBold;
+   src: url(OpenDyslexic-Bold.otf);
+}
+@font-face {
+   font-family: OpenDyslexicRegular;
+   src: url(OpenDyslexic-Regular.otf);
+}
+@font-face {
+   font-family: OpenDyslexicItalic;
+   src: url(OpenDyslexic-Italic.otf);
+}
+.div {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+}
+.button {
+  background-color: black;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+.logo-view {
+    display: flex;
+    flex-direction: column;
+    font-family: OpenDyslexicRegular;
+}
+.title {
+    align-self: center;
+    font-size: 40;
+}
+.subtitle {
+    align-self: center;
+    font-size: 30;
+}
+.h3 {
+    margin-top: 12px;
+    font-size: 18;
+}
+.h4 {
+    font-size: 12;
+}
+</style>
+<body>  
+  <div class="div">
+      <div class="logo-view">
+          <h1 class="title">Codebuds - Feedback Form for Muskein's talk</h1>
+          <h2>Rating</h2>
+          <label for="talk-rating-menu" id="talk-rating-label">How was the talk?</label>
+          <select style="font-family: OpenDyslexicRegular;" id="talk-rating-menu">
+            <option  value="awesome">Awesome</option>
+            <option value="great">Great</option>
+            <option value="amazing">Amazing</option>
+          </select>
+          <h2>Improvements</h2>
+          <label for="improvement-text-area" id="improvement-text-label">Suggest areas of improvement</label>
+          <textarea id="improvement-text-area"></textarea>
+          <h2>Future Talks</h2>
+          <label for="future-checkbox" id="future-label">Yes, I will definitely attend all your future talks</label>
+          <input id="future-checkbox" type="checkbox" checked></input>
+
+          <button style="font-family: OpenDyslexicRegular;" id="submit-button" aria-label="Click this to submit the form" onclick="alert('Form submitted')">
+              Submit
+          </button>
+      </div>
+  </div>
+  
+</body>
+</html>
