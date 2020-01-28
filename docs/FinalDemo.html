@@ -68,19 +68,18 @@
           <h1 class="title">Codebuds - Feedback Form for Muskein's talk</h1>
           <h2>Rating</h2>
           <label for="talk-rating-menu" id="talk-rating-label">How was the talk?</label>
-          <select style="font-family: OpenDyslexicRegular;" id="talk-rating-menu">
-            <option  value="awesome">Awesome</option>
-            <option value="great">Great</option>
-            <option value="amazing">Amazing</option>
+          <select tabindex="1" style="font-family: OpenDyslexicRegular;" id="talk-rating-menu">
+            <option  value="awesome">The talk was Awesome</option>
+            <option value="great">The talk was Great</option>
+            <option value="amazing">The talk was Amazing</option>
           </select>
           <h2>Improvements</h2>
           <label for="improvement-text-area" id="improvement-text-label">Suggest areas of improvement</label>
-          <textarea id="improvement-text-area"></textarea>
+          <textarea tabindex="2" id="improvement-text-area"></textarea>
           <h2>Future Talks</h2>
           <label for="future-checkbox" id="future-label">Yes, I will definitely attend all your future talks</label>
-          <input id="future-checkbox" type="checkbox" checked></input>
-
-          <button style="font-family: OpenDyslexicRegular;" id="submit-button" aria-label="Click this to submit the form" onclick="alert('Form submitted')">
+          <input tabindex="3" id="future-checkbox" type="checkbox" checked></input>
+          <button tabindex="4" style="font-family: OpenDyslexicRegular;" id="submit-button" aria-label="Click this to submit the form" onclick="window.location.href='https://github.fkinternal.com/pages/Flipkart/codebuds/'">
               Submit
           </button>
       </div>
